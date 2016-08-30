@@ -1,4 +1,14 @@
-
-<input value='{{hero.id}}' >
-<input value='{{hero.name}}' >
-<input type="button" onclick="addHero()" value="添加">
+<div class="container">
+  <h1>Hero Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" class="form-control" id="alterEgo">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

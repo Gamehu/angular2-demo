@@ -7,11 +7,10 @@ import {Component} from '@angular/core';
     templateUrl:'./hero.html'
 })
 export class Hero{
-    id:number;
-    name:string;
-    heroes:Hero[];
-    addHero(hero:Hero){
-        console.info(hero);
-        this.heroes.push(hero);
-    }
+  constructor(
+    public id: number,
+    public name: string,
+    public power: string,
+    public alterEgo?: string
+  ) {}
 }
