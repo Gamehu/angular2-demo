@@ -9,8 +9,9 @@ import {Component} from '@angular/core';
 export class Hero{
     id:number;
     name:string;
-    items:string[];
-    constructor(){
-        this.items = ['First Hero','Liu Bang'];
+    heroes:Hero[];
+    addHero(hero:Hero){
+        console.info(hero);
+        this.heroes.push(hero);
     }
 }
