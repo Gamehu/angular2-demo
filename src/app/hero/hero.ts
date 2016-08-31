@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
 
 
-@Component({
+/*@Component({
     selector:'hero',
     styleUrls:['./hero.css'],
     templateUrl:'./hero.html'
-})
+})*/
 export class Hero{
   constructor(
     public id: number,
