@@ -10,4 +10,4 @@
 	<li *ngFor="let item of items">{{item}}</li>
 </ul>
 <input type="text" #newItemName>
-<button on-click="addItem(newItemName.value)" newItemName.value=''>增加商品</button>
+<button on-click="addItem(newItemName.value)" [ngClass]="classes"  newItemName.value=''>增加商品</button>

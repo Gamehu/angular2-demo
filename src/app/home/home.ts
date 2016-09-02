@@ -10,9 +10,11 @@ import {Directive,Component,ElementRef,HostListener} from '@angular/core';
 export class Home {
 	welcome:string;
 	items:string[];
+	public classes:string[];
 	constructor(){
 		this.welcome="欢迎访问网上商城！";
 		this.items=["智能电视","冰箱","洗衣机","路由器","空调"];
+		this.classes = ['btn-primary','btn'];
 	}
 	addItem(newItemName:string){
 		if(!newItemName){
