@@ -7,7 +7,14 @@
 </ul>
 <h3>第二种模板语法（语法糖而已）</h3>
 <ul>
-	<li *ngFor="let item of items">{{item}}</li>
+	<li *ngFor="let item of items;let i=index">{{item | uppercase}}-{{i}}</li>
 </ul>
 <input type="text" #newItemName>
 <button on-click="addItem(newItemName.value)" [ngClass]="classes"  newItemName.value=''>增加商品</button>
+<span [ngSwitch]="toeChoice">
+  <span *ngSwitchCase="'Eenie'">Eenie</span>
+  <span *ngSwitchCase="'Meanie'">Meanie</span>
+  <span *ngSwitchCase="'Miney'">Miney</span>
+  <span *ngSwitchCase="'Moe'">Moe</span>
+  <span *ngSwitchDefault>other</span>
+</span>

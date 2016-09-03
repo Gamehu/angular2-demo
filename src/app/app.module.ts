@@ -15,9 +15,10 @@ import {RepoBrowser} from './github/repo-browser/repo-browser';
 import {RepoList} from './github/repo-list/repo-list';
 import {RepoDetail} from './github/repo-detail/repo-detail';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import {TodoApp} from "./todos/TodoApp";
 
 @NgModule({
-  declarations: [AppComponent, About, RepoBrowser, RepoList, RepoDetail, Home,HeroFormComponent],
+  declarations: [AppComponent, About, RepoBrowser, RepoList, RepoDetail, Home,HeroFormComponent,TodoApp],
   imports     : [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig)],//这里配置了路由
   providers   : [Github, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap   : [AppComponent]//启动点指向AppComponent

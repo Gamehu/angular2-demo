@@ -5,12 +5,14 @@ import {HeroFormComponent} from './hero/hero-form';
 import {RepoBrowser} from './github/repo-browser/repo-browser';
 import {RepoList} from './github/repo-list/repo-list';
 import {RepoDetail} from './github/repo-detail/repo-detail';
+import {TodoApp} from "./todos/TodoApp";
 
 export const rootRouterConfig: Routes = [
   {path: '', redirectTo: 'home', terminal: true},
   {path: 'home', component: Home},
   {path: 'about', component: About},
   {path:'hero',component:HeroFormComponent},
+  {path:'todos',component:TodoApp},
   {path: 'github', component: RepoBrowser,
     children: [
       {path: '', component: RepoList},

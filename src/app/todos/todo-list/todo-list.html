@@ -1,0 +1,9 @@
+<ul>
+<template ngFor let-todo let-index="index" [ngForOf]="todos">
+  <li [ngClass]="{completed:todo.completed,'text-primary':todo.completed}">
+    <div class="checkbox">
+  <input type="checkbox" (change)="toggleCompletion(index)" >{{todo.label}}
+    </div>
+  </li>
+</template>
+</ul>

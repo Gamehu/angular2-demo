@@ -1,4 +1,4 @@
-import {Directive,Component,ElementRef,HostListener} from '@angular/core';
+import {Directive,Component,ElementRef,HostListener,Output,Input,EventEmitter} from '@angular/core';
 
 //装饰器是给编译器看的，装饰器类似于Spring里面的注解
 @Component({
@@ -13,7 +13,7 @@ export class Home {
 	public classes:string[];
 	constructor(){
 		this.welcome="欢迎访问网上商城！";
-		this.items=["智能电视","冰箱","洗衣机","路由器","空调"];
+		this.items=["智能电视","冰箱","洗衣机","路由器","空调",'memeda'];
 		this.classes = ['btn-primary','btn'];
 	}
 	addItem(newItemName:string){
@@ -24,3 +24,5 @@ export class Home {
 		this.items.push(newItemName);
 	}
 }
+
+
