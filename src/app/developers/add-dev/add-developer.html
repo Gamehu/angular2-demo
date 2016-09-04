@@ -1,0 +1,31 @@
+<form  (ngSubmit)="addDeveloper()" class="form col-md-4" [hidden]="submitted" #f="ngForm">
+  <span *ngIf="errorMessage" class="alert alert-danger">{{errorMessage}}</span>
+  <span *ngIf="successMessage" class="alert alert-success">{{successMessage}}</span>
+  <div class="form-group">
+    <label class="control-label" for="realNameInput">Real Name</label>
+    <div>
+      <input name="realName" id="realNameInput" class="form-control" type="text" ngControl="realName" required
+             [(ngModel)]="developer.realName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="emailInput">Email</label>
+    <div>
+      <input name="email" id="emailInput" class="form-control" type="text" ngControl="email" required
+             [(ngModel)]="developer.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="technologyInput">Technology</label>
+    <div>
+      <select name="technology" id="technologyInput" class="form-control" ngControl="technology" required
+        [(ngModel)]="developer.technology">
+
+        <option *ngFor="let technology of technologies" [value]="technology">{{technology}}</option>
+      </select>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" >
+    Add
+  </button>
+</form>
