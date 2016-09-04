@@ -2,7 +2,7 @@
  * Created by zhongzhong on 16/9/3.
  */
 import {Component, Input, Output, EventEmitter, ChangeDetectionStrategy} from "@angular/core";
-import {Todo} from "../model/Todo";
+import {Todo} from "../model/todo";
 @Component({
   selector:'todo-list',
   templateUrl:'./todo-list.html',

@@ -2,9 +2,9 @@
  * Created by zhongzhong on 16/9/3.
  */
 import {Component} from "@angular/core";
-import {InputBox} from "./input-box/InputBox";
-import {TodoList} from "./todo-list/TodoList";
-import {Todo} from "./model/Todo";
+import {InputBox} from "./input-box/input-box";
+import {TodoList} from "./todo-list/todo-list";
+import {Todo} from "./model/todo";
 
 @Component({
   selector: 'todo-app',

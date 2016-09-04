@@ -5,7 +5,7 @@ import {HeroFormComponent} from './hero/hero-form';
 import {RepoBrowser} from './github/repo-browser/repo-browser';
 import {RepoList} from './github/repo-list/repo-list';
 import {RepoDetail} from './github/repo-detail/repo-detail';
-import {TodoApp} from "./todos/TodoApp";
+import {TodoApp} from "./todos/todo-app";
 
 export const rootRouterConfig: Routes = [
   {path: '', redirectTo: 'home', terminal: true},
